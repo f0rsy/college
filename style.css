@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+}
+
+:root {
+    --white-base-color: #fff;
+    --black-base-color: #000;
+    --gray: #868686;
+    --grey2: #e6e6e6;
+    --gray-3: #323232;
+    --grey-optional: #eaeaea;
+}
+
+.input-container {
+    position: relative;
+    margin: 50px auto;
+    width: 36rem;
+}
+
+.input-container input[type="text"] {
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid var(--grey2);
+    padding: 5px 0;
+    background-color: transparent;
+    outline: none;
+}
+
+.input-container .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--grey);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.input-container input[type="text"]:focus~.label,
+.input-container input[type="text"]:valid~.label {
+    top: -20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.input-container .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #333;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+}
+
+.input-container input[type="text"]:focus~.underline,
+.input-container input[type="text"]:valid~.underline {
+    transform: scaleX(1);
+}
+
+.search__button {
+    position: absolute;
+    right: 0.1rem;
+    border: none;
+    background-color: #fff;
+    margin-top: .1em;
+}
+
+.search__button:hover {
+    cursor: pointer;
+}
+
+.search__icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: var(--grey);
+}
+
+.firstHeader {
+    display: flex;
+    align-items: center;
+}
+
+.secondHeader {
+    background-color: var(--black-base-color);
+    height: 88px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.secondHeader a {
+    color: var(--white-base-color);
+    text-decoration: none;
+}
+
+.modal-content {
+    background-color: #fff;
+    /* Цвет фона */
+    color: #333;
+    /* Цвет текста */
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.hamburger {
+    padding: 10px 15px;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: initial;  
+  border-color: initial;      
+  box-shadow: none;           
+  color: initial;             
+}
+
+.hamburger-box {
+    width: 35px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transition: all 0.4s ease-in-out;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+    content: "";
+    display: block;
+}
+
+.hamburger-inner {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hamburger-inner::before {
+    top: -10px;
+}
+
+.hamburger-inner::after {
+    top: 10px;
+}
+
+/* Анимация для переключения состояния гамбургер-меню */
+.hamburger.active .hamburger-inner {
+    background-color: transparent;
+}
+
+.hamburger.active .hamburger-inner::before {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger.active .hamburger-inner::after {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.left {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondHeaderText {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 870px; /* или auto, если высота должна определяться контентом */
+    overflow: hidden;
+}
+
+.background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.text {
+    font-weight: bold; /* Если MontserratBold не доступен */
+    color: white;
+    font-size: 60px;
+
+    margin-bottom: 20px; /* Отступ между текстом и ссылкой */
+}
+
+a {
+
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    max-width: 800px;
+    display: inline-block; /* Это позволит контролировать размер и позиционирование ссылки */
+}
+
+.bigCard {
+    width: 790px;
+    height: 450px;
+    background-color: #000;
+    color: #fff;
+    padding: 40px 47px;
+}
+.bigCard .card-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.bigCard .card-text {
+    font-size: 24px;
+}
+.bigCard .btn {
+    color: #fff;
+    border: 1px solid #fff;
+    margin-top: 20px;
+}
