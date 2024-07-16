@@ -50,29 +50,107 @@
                 </div>
             </div>
             <!-- Модальное окно для полноэкранного меню -->
+            <!-- Модальное окно -->
             <div class="modal fade" id="fullscreenMenu" tabindex="-1" aria-labelledby="fullscreenMenuLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-fullscreen">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="fullscreenMenuLabel">Full Screen Menu</h5>
+                        <div class="container modal-header custom-header">
+                            <img src="media/Logo_White.png" alt="Логотип">
+                            <nav class="header-nav">
+                                <a href="postupaushim.html">Поступающим</a>
+                                <a href="#">Обучающимся</a>
+                                <a href="#">Расписание</a>
+                                <a href="#">Заказать справку</a>
+                            </nav>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body">
-                            <ul class="nav flex-column">
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Services</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
-                                </li>
-                            </ul>
+                        <div class="container modal-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <nav class="nav flex-column">
+                                        <a id="infoLink" class="nav-link" href="#" data-target="info">Сведения об
+                                            образовательной
+                                            организации</a>
+                                        <svg width="385" height="2" viewBox="0 0 385 2" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 1H385" stroke="#323232" />
+                                        </svg>
+                                        <a id="applicantsLink" class="nav-link" href="#"
+                                            data-target="applicants">Поступающим</a>
+                                        <svg width="385" height="2" viewBox="0 0 385 2" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 1H385" stroke="#323232" />
+                                        </svg>
+                                        <a id="studentLink" class="nav-link" href="#"
+                                            data-target="students">Обучающимся</a>
+                                        <svg width="385" height="2" viewBox="0 0 385 2" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 1H385" stroke="#323232" />
+                                        </svg>
+                                        <a class="nav-link" href="#" data-target="gia">ГИА</a>
+                                        <svg width="385" height="2" viewBox="0 0 385 2" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 1H385" stroke="#323232" />
+                                        </svg>
+                                        <a class="nav-link" href="#" data-target="extra">Доп Название</a>
+                                    </nav>
+                                </div>
+                                <div class="col-md-8">
+                                    <div id="contentArea" class="content-area">
+                                        <nav id="navigationSidebar" class="navigationSidebar">
+                                            <ul>
+                                                <li><a href="svedenyaoborganiz.html#section1">Основные сведения</a></li>
+                                                <li><a href="svedenyaoborganiz.html#section2">Структура и органы
+                                                        управления образовательной организацией</a></li>
+                                                <li><a href="svedenyaoborganiz.html#section3">Документы</a></li>
+                                                <li><a href="svedenyaoborganiz.html#section4">Руководство,
+                                                        педагогический состав</a></li>
+                                                <li><a href="svedenyaoborganiz.html#section5">Образование</a></li>
+                                                <li><a href="svedenyaoborganiz.html#section6">Образовательные
+                                                        стандарты</a></li>
+                                                <li><a href="svedenyaoborganiz.html#section7">Материально-техническое
+                                                        обеспечение и оснащенность образовательного процесса</a></li>
+                                                <li><a href="svedenyaoborganiz.html#section8">Стипендии и иные виды
+                                                        материальной поддержки</a></li>
+                                                <li><a href="svedenyaoborganiz.html#section9">Доступная среда</a></li>
+                                                <li><a href="svedenyaoborganiz.html#section10">Платные образовательные
+                                                        услуги</a></li>
+                                                <li><a href="svedenyaoborganiz.html#section11">Финансово-хозяйственная
+                                                        деятельность</a></li>
+                                                <li><a href="svedenyaoborganiz.html#section12">Вакантные места для
+                                                        приема</a></li>
+                                                <li><a href="svedenyaoborganiz.html#section13">Противодействие
+                                                        коррупции</a></li>
+                                                <li><a href="svedenyaoborganiz.html#section14">Международное
+                                                        сотрудничество</a></li>
+                                                <li><a href="svedenyaoborganiz.html#section15">Наставничество</a></li>
+                                                <li><a href="svedenyaoborganiz.html#section16">Внутренняя система оценки
+                                                        качества образования</a></li>
+                                            </ul>
+                                        </nav>
+                                        <nav id="navigationSidebar2" class="navigationSidebar">
+                                            <ul>
+                                                <li><a href="postupaushim.html">Выбрать программу</a></li>
+                                                <li><a href="">Общежитие</a></li>
+                                                <li><a href="">Оплата обучения</a></li>
+                                                <li><a href="">Перевод из другого колледжа</a></li>
+                                                <li><a href="">Подготовка к поступлению</a></li>
+                                            </ul>
+                                        </nav>
+                                        <nav id="navigationSidebar3" class="navigationSidebar">
+                                            <ul>
+                                                <li><a href="postupaushim.html">Расписание</a></li>
+                                                <li><a href="">Заказать справку</a></li>
+                                                <li><a href="">Стипендия и материальная помощь</a></li>
+                                                <li><a href="">Общежитие</a></li>
+                                                <li><a href="">Оплата обучения</a></li>
+                                                <li><a href="">Библиотека</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -323,7 +401,8 @@
                                 <li><a href="#">Руководство, педагогический состав</a></li>
                                 <li><a href="#">Образование</a></li>
                                 <li><a href="#">Образовательные стандарты</a></li>
-                                <li><a href="#">Материально-техническое обеспечение и оснащенность образовательного процесса</a></li>
+                                <li><a href="#">Материально-техническое обеспечение и оснащенность образовательного
+                                        процесса</a></li>
                                 <li><a href="#">Стипендии и иные виды материальной поддержки</a></li>
                                 <li><a href="#">Доступная среда</a></li>
                                 <li><a href="#">Платные образовательные услуги</a></li>
@@ -378,7 +457,9 @@
             </div>
             <div class="footer-bottom">
                 <div class="leftBottom">
-                    <p>&copy; 2009-2024 Департамент образования и науки Ханты-Мансийского автономного округа - Югры. Бюджетное учреждение профессионального образования Ханты-Мансийского автономного округа - Югры "Советский политехнический колледж"</p>
+                    <p>&copy; 2009-2024 Департамент образования и науки Ханты-Мансийского автономного округа - Югры.
+                        Бюджетное учреждение профессионального образования Ханты-Мансийского автономного округа - Югры
+                        "Советский политехнический колледж"</p>
                 </div>
                 <div class="right text-right">
                     <p>Телефоны: 8 (34675) 3-22-71</p>
@@ -418,6 +499,27 @@
 
         // event
         btns.forEach((el) => el.addEventListener("click", accordion));
+
+        document.getElementById('infoLink').addEventListener('click', function (event) {
+            event.preventDefault();
+            document.getElementById('navigationSidebar').style.display = 'block';
+            document.getElementById('navigationSidebar2').style.display = 'none';
+            document.getElementById('navigationSidebar3').style.display = 'none';
+        });
+
+        document.getElementById('applicantsLink').addEventListener('click', function (event) {
+            event.preventDefault();
+            document.getElementById('navigationSidebar').style.display = 'none';
+            document.getElementById('navigationSidebar2').style.display = 'block';
+            document.getElementById('navigationSidebar3').style.display = 'none';
+        });
+
+        document.getElementById('studentLink').addEventListener('click', function (event) {
+            event.preventDefault();
+            document.getElementById('navigationSidebar').style.display = 'none';
+            document.getElementById('navigationSidebar2').style.display = 'none';
+            document.getElementById('navigationSidebar3').style.display = 'block';
+        });
     </script>
 </body>
 

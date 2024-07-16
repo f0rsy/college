@@ -229,7 +229,7 @@ body {
 .navigationSidebar {
     width: 40%;
     overflow-y: auto;
-
+    display: none;
 }
 
 .navigationSidebar ul {
