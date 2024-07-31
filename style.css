@@ -769,7 +769,7 @@ a {
     display: block;
 }
 
-#section1 p,
+.content-section p,
 li {
     font-weight: 400;
     font-size: 20px;
@@ -777,7 +777,7 @@ li {
     letter-spacing: -0.01em;
 }
 
-#section1 h5 {
+.content-section h5 {
     font-weight: 500;
     font-size: 21px;
     line-height: 124%;
@@ -865,8 +865,150 @@ li {
     display: none;
 }
 
-.nav-link:hover, .nav-link:focus {
+.nav-link:hover,
+.nav-link:focus {
     color: var(--white-base-color);
+}
+
+.docs {
+    border-bottom: 1.30px solid var(--black-base-color);
+    width: 100%;
+    margin-top: 20px;
+}
+
+.docs p {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--gray);
+    margin-left: 30px;
+}
+
+.document {
+    color: var(--black-base-color);
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 124%;
+    letter-spacing: -0.01em;
+    margin-bottom: 10px;
+    width: 100%;
+    text-decoration: none;
+    max-width: 100%;
+}
+
+.document:before {
+    content: url('media/Icon_Doc.png');
+    margin-right: 10px;
+    width: 20px;
+}
+
+.document::after {
+    content: "\2192";
+    color: #000;
+    float: right;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 70px;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.acc-container-docs {
+    width: 100%;
+}
+
+.acc-btn-docs {
+    width: 100%;
+    padding: 25px 0rem;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 124%;
+    letter-spacing: -0.01em;
+    background: inherit;
+    border: none;
+    outline: none;
+    text-align: left;
+    transition: all 0.5s linear;
+}
+
+.acc-btn-docs:after {
+    content: "\2192";
+    color: #000;
+    float: right;
+    transition: all 0.3s linear;
+}
+
+.acc-btn-docs::before {
+    content: url('media/moreDocs.png');
+    margin-right: 10px;
+    width: 20px;
+}
+
+.acc-btn-docs.is-open:after {
+    transform: rotate(90deg);
+}
+
+.acc-content-docs {
+    max-height: 0;
+    color: var(--black-base-color);
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    border-bottom: 1.30px solid var(--black-base-color);
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+}
+
+
+.acc-content-docs h5 {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 124%;
+    letter-spacing: -0.01em;
+}
+
+.acc-content-docs a {
+    color: var(--black-base-color);
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.acc-content-docs a:hover {
+    border-bottom: 1px solid var(--black-base-color);
+}
+
+.obrazTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0;
+}
+
+
+.obrazTable th,
+td {
+    background-color: white;
+    color: black;
+    padding: 6px;
+    text-align: left;
+    vertical-align: top;
 }
 
 @media (max-width: 992px) {
@@ -1220,7 +1362,7 @@ li {
     .acc-container {
         width: 100%;
     }
-    
+
     .acc-btn {
         width: 100%;
         cursor: pointer;
@@ -1235,18 +1377,18 @@ li {
         padding: 10px;
         padding-left: 0;
     }
-    
+
     .acc-btn:after {
         content: "\2192";
         color: #000;
         float: right;
         transition: all 0.3s linear;
     }
-    
+
     .acc-btn.is-open:after {
         transform: rotate(90deg);
     }
-  
+
     .acc-content {
         max-height: 0;
         color: var(--black-base-color);
