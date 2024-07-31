@@ -16,6 +16,10 @@ body {
     padding: 0;
 }
 
+main {
+    margin-bottom: 130px;
+}
+
 h1 {
     font-weight: 500;
     font-size: 48px;
