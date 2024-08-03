@@ -344,6 +344,21 @@ h1 {
     color: var(--white-base-color);
 }
 
+.textSmallBlack {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 124%;
+    letter-spacing: -0.01em;
+    color: var(--black-base-color);
+}
+
+h6 {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 124%;
+    letter-spacing: -0.01em;
+}
+
 a {
     color: white;
     font-size: 20px;
@@ -759,6 +774,22 @@ a {
     color: var(--black-base-color);
 }
 
+.sidebar a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 111%;
+    color: var(--gray);
+}
+
+.sidebar a:hover {
+    color: var(--black-base-color);
+}
+
+.sidebar a.active {
+    color: var(--black-base-color);
+}
+
+
 .content {
     flex: 1;
     width: 60%;
@@ -801,6 +832,7 @@ li {
     background-color: var(--black-base-color);
     margin-bottom: 20px;
     box-sizing: border-box;
+    white-space: wrap;
 }
 
 .specialCardText {
@@ -810,7 +842,6 @@ li {
     height: 55%;
     /* Убедитесь, что это 100% от высоты .specialtiesCard */
     box-sizing: border-box;
-    ;
 }
 
 .budget {
@@ -1014,6 +1045,100 @@ td {
     text-align: left;
     vertical-align: top;
 }
+
+.scrolling-wrapper-specialites {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-right: -50px;
+
+    .specialtiesCard {
+        display: inline-block;
+        border: none;
+        margin-right: 20px;
+    }
+}
+
+.card-skill {
+    padding: 34px 34px 52px 34px;
+    width: 470px;
+    height: 240px;
+    background: var(--black-base-color);
+    border-radius: 0;
+}
+
+.card-skill-long {
+    padding: 34px 34px 52px 34px;
+    width: 960px;
+    height: 240px;
+    background: var(--black-base-color);
+    border-radius: 0;
+}
+
+.icon {
+    margin-bottom: 40px;
+    width: 42px;
+    height: 42px;
+}
+
+.card-txt {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 124%;
+    letter-spacing: -0.01em;
+    color: var(--white-base-color);
+}
+
+.explanatoryText {
+    margin-bottom: 30px;
+}
+
+.infoSpecialites {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin-top: 40px;
+}
+
+.infoSpecialites p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.hero-section {
+    background-color: var(--black-base-color);
+    color: #fff;
+    padding-top: 70px;
+    height: 570px;
+    /* text-align: center; */
+}
+
+.hero-section h1 {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 100%;
+    margin-top: 0;
+}
+
+.programNumber {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 124%;
+    letter-spacing: -0.01em;
+    margin-top: 15px;
+}
+
+.hero-section .btn-apply {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.25rem;
+    display: inline-block;
+}
+
+.btn-apply {
+    margin-top: 140px;
+}
+
 
 @media (max-width: 992px) {
 
