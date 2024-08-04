@@ -1139,6 +1139,45 @@ td {
     margin-top: 140px;
 }
 
+.page404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.page404 h1 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 112%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    margin-top: 0;
+}
+
+.page404 p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 111%;
+    text-align: center;
+}
+
+.backMain {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 124%;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    color: var(--black-base-color);
+}
+
+.face {
+    width: auto; /* Adjust the width as needed */
+    height: auto;
+}
 
 @media (max-width: 992px) {
 
@@ -1533,4 +1572,42 @@ td {
     .sidebar {
         display: none;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
