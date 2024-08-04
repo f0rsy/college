@@ -1198,6 +1198,20 @@ td {
         display: block;
     }
 
+    .modal-body, .modal-header {
+        background-color: var(--black-base-color);
+        margin-top: 0;
+    }
+
+    .modal-body ul li a {
+        color: var(--gray); /* Default color for all links */
+        transition: color 0.3s ease; /* Smooth transition for color change */
+    }
+    
+    .modal-body ul li a:hover {
+        color: var(--white-base-color); /* Color changes to white on hover */
+    }
+
     .mobileHeaderObjects {
         display: flex;
         justify-content: space-between;
