@@ -370,7 +370,7 @@ a {
 .bigCard {
     width: 790px;
     height: 450px;
-    background-color: #000;
+    background-color: var(--black-base-color);
     color: #fff;
     padding: 40px 47px;
 }
@@ -426,7 +426,7 @@ a {
 .smallCard {
     width: 590px;
     height: 450px;
-    background-color: #000;
+    background-color: var(--black-base-color);
     color: #fff;
     padding: 40px 47px;
 }
@@ -609,6 +609,7 @@ a {
     font-size: 48px;
     line-height: 112%;
     letter-spacing: -0.01em;
+    margin-top: 0;
 }
 
 .hero {
@@ -1021,9 +1022,10 @@ tr:nth-child(even) {
 
 .acc-content-docs a {
     color: var(--black-base-color);
-    width: 100%;
-    max-width: 100%;
+    /* width: 100%;
+    max-width: 100%; */
     margin-bottom: 20px;
+    border-bottom: 1px solid var(--black-base-color);
 }
 
 .acc-content-docs a:hover {
@@ -1109,7 +1111,7 @@ td {
     background-color: var(--black-base-color);
     color: #fff;
     padding-top: 70px;
-    height: 570px;
+    height: 650px;
     /* text-align: center; */
 }
 
@@ -1571,6 +1573,7 @@ td {
         line-height: 100%;
         padding: 10px;
         padding-left: 0;
+        color: var(--black-base-color);
     }
 
     .acc-btn:after {
