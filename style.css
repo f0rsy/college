@@ -110,9 +110,16 @@ h1 {
 }
 
 .secondHeader a {
-    color: var(--white-base-color);
     text-decoration: none;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 124%;
+    letter-spacing: -0.01em;
+    color: var(--gray);
+    margin-bottom: 20px;
 }
+
+.left a {}
 
 .modal-content {
     background-color: #000;
@@ -266,6 +273,11 @@ h1 {
     text-decoration: none;
     position: relative;
     transition: color 300ms;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    margin: 0;
 }
 
 .left a::before {
@@ -365,6 +377,10 @@ a {
     text-decoration: none;
     max-width: 800px;
     display: inline-block;
+}
+
+.card a {
+    color: var(--black-base-color);
 }
 
 .bigCard {
@@ -648,6 +664,7 @@ a {
     text-align: left;
     transition: all 0.5s linear;
     font-weight: 500;
+    color: #000;
 }
 
 .acc-btn:after {
@@ -980,6 +997,7 @@ tr:nth-child(even) {
     outline: none;
     text-align: left;
     transition: all 0.5s linear;
+    color: #000;
 }
 
 .acc-btn-docs:after {

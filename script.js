@@ -6,13 +6,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         scrollingWrapper.scrollLeft += event.deltaY;
     });
 });
-
-const scrollingWrapper = document.querySelector('.scrolling-wrapper-specialites');
-
-scrollingWrapper.addEventListener('wheel', (evt) => {
-    evt.preventDefault();
-    scrollingWrapper.scrollLeft += evt.deltaY;
-});
 document.addEventListener('DOMContentLoaded', function () {
     const menuLinks = document.querySelectorAll('.sidebar ul li a, .modal-body .nav-link');
     const sections = document.querySelectorAll('.content-section');
